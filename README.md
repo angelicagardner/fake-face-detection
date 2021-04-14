@@ -89,6 +89,10 @@ some collected paper and personal notes relevant to Fake Face Detetection
   - [to be released]
   - [paper](https://arxiv.org/abs/2005.10360):[arXiv 2020] Video Forensics HQ: Detecting High-quality Manipulated Face Videos
 
+12. FFIW10KDataset
+  - [CVPR 2021] [Face Forensics in the Wild](https://arxiv.org/abs/2103.16076)
+  - To take face forgery detection to a new level, we construct a novel large-scale dataset, called FFIW10K, which comprises 10,000 high-quality forgery videos, with an average of three  human faces in each frame.
+
 ## II. Current Work
 
 ### (1) Special Artifact-Based
@@ -119,7 +123,7 @@ some collected paper and personal notes relevant to Fake Face Detetection
 10. [CVPR 2020] [Face X-ray for More General Face Forgery Detection](https://arxiv.org/abs/1912.13458)
     - [note](https://github.com/592McAvoy/fake-face-detection/blob/master/detect.md#arxiv-2019-unmasking-deepfakes-with-simple-features-1)
     - We observe that most existing face manipulation methods share a common step: **blending** the altered face into an existing background image. 
-    - The face X-ray of an input face image is **a greyscale image** that reveals whether the input image can be decomposed into the blending of two images from different sources. 6. [arXiv 2020] [DeepFake Detection Based on DiscrepanciesBetween Faces and their Context](https://arxiv.org/abs/2008.12262)
+    - The face X-ray of an input face image is **a greyscale image** that reveals whether the input image can be decomposed into the blending of two images from different sources. 
 11. [arXiv 2020] [DeepFake Detection Based on DiscrepanciesBetween Faces and their Context](https://arxiv.org/abs/2008.12262)
 12. [arXiv 2020] [DeepRhythm: Exposing DeepFakes with Attentional VisualHeartbeat Rhythms](https://arxiv.org/abs/2006.07634)
 
@@ -150,8 +154,9 @@ some collected paper and personal notes relevant to Fake Face Detetection
    - [code](https://github.com/polimi-ispl/icpr2020dfdc)
    - ensemble of CNNs & attention layers  & siamese training
    - DFDC challenge performance: the final solution proposed by our team was an ensemble of the 4 proposed models, which led us to top3% on the leaderboard computed against the public test set. 
-5. [arXiv 2020] [Sharp Multiple Instance Learning for DeepFake Video Detection](https://arxiv.org/abs/2008.04585)
+5. [ACM MM 2020] [Sharp Multiple Instance Learning for DeepFake Video Detection](https://arxiv.org/abs/2008.04585)
 6. [arXiv 2020] [Dynamic texture analysis for detectingfake faces in video sequences](https://arxiv.org/abs/2007.15271)
+7. [ECCV 2020] [Two-branch Recurrent Network for Isolating Deepfakes in Videos](https://arxiv.org/abs/2008.03412)
 
 ### (4) Two Stream
 
@@ -185,6 +190,9 @@ some collected paper and personal notes relevant to Fake Face Detetection
    - image -> **[DFT]** -> sinusoidal components of various frequencies -> **[Azimuthal Average]** -> 1D representation of FFT power spectrum -> **[Classifier]** -> Real/Fake
 2. [arXiv 2020] [Manipulated Face Detector: Joint Spatial and Frequency Domain Attention Network](https://arxiv.org/abs/2005.02958)
 3. [ECCV 2020] [Thinking in Frequency: Face Forgery Detectionby Mining Frequency-aware Clues](https://link.springer.com/chapter/10.1007%2F978-3-030-58610-2_6)
+4. [CVPR 2021] [Spatial-Phase Shallow Learning: Rethinking Face Forgery Detection in Frequency Domain](https://arxiv.org/abs/2103.01856)
+5. [CVPR 2021] [Generalizing Face Forgery Detection with High-frequency Features](https://arxiv.org/abs/2103.12376)
+
 
 ### (7) General image manipulation
 
@@ -198,6 +206,7 @@ some collected paper and personal notes relevant to Fake Face Detetection
    - [code](https://github.com/pengzhou1108/RGB-N)
 4. [arXiv 2019] [Full-Image Full-Resolution End-to-End-Trainable CNN Framework for Image Forgery Detection](https://arxiv.org/abs/1909.06751)
    - [code](https://github.com/FrancescoMarra/E2E-ForgeryDetection)
+
 
 ### (8) Novel Network or Module
 
@@ -215,6 +224,8 @@ some collected paper and personal notes relevant to Fake Face Detetection
    - We propose a **Hierarchical Memory Network (HMN)** architecture, which is able to successfully detect faked faces by utilizing knowledge stored in neural memories as well as visual cues to reason about the perceived face and anticipate its future semantic embeddings.  
 5. [arXiv 2020] [Fake Face Detection via Adaptive Residuals Extraction Network](https://arxiv.org/abs/2005.04945)
    - Novel residual extractor for residual feature extraction
+6. [CVPR 2021] [Multi-attentional Deepfake Detection](https://arxiv.org/abs/2103.02406)
+   - [code repo](https://github.com/yoctta/multiple-attention)
 
 
 ### (9) GAN-fake face detection
@@ -231,10 +242,16 @@ some collected paper and personal notes relevant to Fake Face Detetection
 6. [arXiv 2020] [Fighting Deepfake by Exposing the ConvolutionalTraces on Images](https://arxiv.org/abs/2008.04095)
 7. [arXiv 2020] [CNN Detection of GAN-Generated Face Imagesbased on Cross-Band Co-occurrences Analysis](https://arxiv.org/abs/2007.12909)
 8. [Media Watermarking,Security and Forensics 2019] [Detecting GAN generated Fake Images using Co-occurrence Matrices](https://arxiv.org/abs/1903.06836)
+9. [ECCV 2020] [What makes fake images detectable? Understanding properties that generalize](https://arxiv.org/abs/2008.10588)
+   - [code repo](https://github.com/chail/patch-forensics)
+   - [proj page](https://chail.github.io/patch-forensics/)
+10. [CVPR 2021] [Closer Look at Fourier Spectrum Discrepancies for CNN-generated Images Detection](https://arxiv.org/abs/2103.17195)
+   - [code](https://keshik6.github.io/Fourier-Discrepancies-CNN-Detection/)
 
 ### (10) Domain Adaptation
 1. [CVPR 2020] [One-Shot Domain Adaptation For Face Generation](https://arxiv.org/abs/2003.12869)
 
 ### (11) Metrics Learning
 1. [arXiv 2020] [Detecting Deepfakes with Metric Learning](https://arxiv.org/abs/2003.08645)
-2. [arXic 2020] [Deep Detection for Face Manipulation](https://arxiv.org/abs/2009.05934)
+2. [arXiv 2020] [Deep Detection for Face Manipulation](https://arxiv.org/abs/2009.05934)
+3. [CVPR 2021] [Frequency-aware Discriminative Feature Learning Supervised by Single-Center Loss for Face Forgery Detection](https://arxiv.org/abs/2103.09096)
